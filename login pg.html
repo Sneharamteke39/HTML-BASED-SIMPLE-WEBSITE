@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>
+Login page
+</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body >
+
+<header>
+<br><br><br><br><br>
+<h1><center> Login </center>
+</h1>
+<br><br>
+<form name="login">
+<center>
+<h2><em><strong>Username:<input type="text" name="userid"/></strong></em></h2>
+<br><br>
+<h2><em><strong>Password:<input type="password" name="pswrd"/></strong></em></h2>
+<br><br><br><br>
+<BUTTON TYPE="BUTTON" onclick="check(this.form)" NAME="BUTTON"><STRONG><H3>LOGIN</H3></STRONG></BUTTON>
+<BUTTON TYPE="BUTTON" NAME="BUTTON"><STRONG><H4>CANCEL</H4></STRONG></BUTTON>
+</center>
+</form>
+<script language="javascript">
+function check(form)
+{
+ 
+ if(form.userid.value == "student" && form.pswrd.value == "stud")
+  {
+    window.open('index.html')
+  }
+ else
+ {
+   alert("Error Password or Username")
+  }
+}
+</script></header>
+</body>
+</html>
